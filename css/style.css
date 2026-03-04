@@ -10,16 +10,16 @@
 }
 
 body{
-    background-image: url("../assets/img/estrelas.jpg");
-    background-repeat: repeat;   
-    padding: 2.5rem;
+    background-color: black;
 }
 
 .janela{
     border-radius: 1rem;
-    border: var(--branco) 2px solid;
-    background-color: rgba(42, 42, 42, 0.40);
+    border: var(--branco) 5px solid;
+    background-image: url(/assets/img/estrelas.jpg);
+    background-repeat: repeat;
     margin-top: 1.5rem;
+    margin: 2.5rem;
 }
 
 #header{
@@ -32,9 +32,10 @@ body{
    vertical-align: center;
    padding: 1.5rem;
    gap: 1rem;
+   margin: 2.5rem;
 }
 
-#planeta{
+#icon{
     width: 2.5rem;
     height: 2.5rem;
 }
@@ -51,11 +52,14 @@ body{
     height: 15rem;
 }
 
-#título{
+#perfil{
     color: var(--branco);
     font-size: 2.5rem;
     font-weight: medium;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
 }
 
 #banner{
@@ -64,4 +68,31 @@ body{
     background-size: cover;
     height: 15rem;
     width: 100%;
+}
+
+#foto img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+
+#foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+    height: max-content;
+    align-items: start; 
+}
+
+hr{
+    border: 2.5px solid var(--branco);
+
 }
