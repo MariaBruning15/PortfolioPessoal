@@ -1,0 +1,31 @@
+Página Inicial: certo
+Apresente uma breve introdução sobre você.
+Inclua uma foto de perfil ou um banner de cabeçalho para adicionar personalidade à página inicial.
+
+Seção/página de projetos: certo (página)
+Crie uma seção para exibir os projetos mais relevantes do autor.
+Para cada projeto, inclua uma imagem de destaque, título, descrição breve e um link para mais detalhes.
+
+Seção/página de habilidades: certo (seção)
+Liste as habilidades do autor, como linguagens de programação, ferramentas, frameworks, etc.
+Pode ser apresentado em forma de ícones ou texto simples.
+
+Seção/página de experiência profissional:
+Se aplicável, inclua informações sobre a experiência profissional do autor.
+Liste o nome da empresa, cargo, datas de emprego e descrição das responsabilidades.
+
+Seção/página de educação:
+Liste as instituições educacionais frequentadas pelo autor.
+Inclua o nome da instituição, o curso/graduação, as datas de frequência e informações relevantes.
+
+Seção/página de contato: certo (seção de links/página de formulário)
+Forneça meios de contato, como e-mail, telefone ou links para perfis em redes sociais.
+Inclua um formulário de contato básico.
+
+Integração com API:
+Escolha uma API gratuita que forneça dados relevantes para o portfólio (por exemplo, API de previsão do tempo, API de citações, API de imagens, etc.).
+Utilize JavaScript para fazer uma requisição à API e exibir os dados relevantes no portfólio.
+A API pode ser utilizada, por exemplo, para exibir a previsão do tempo atual baseada na localização do usuário, ou para apresentar informações extraídas do GitHub.
+
+Internacionalização: 
+Adicione recurso de internacionalização (i18n) para ter suporte a pelo menos duas línguas.
