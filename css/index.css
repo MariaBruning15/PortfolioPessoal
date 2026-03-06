@@ -4,19 +4,16 @@
 /*---------------------------------------------------------------------------------------------*/
 
 #perfil{
-    color: var(--branco);
     font-size: 2.5rem;
     font-weight: medium;
     padding: 1.5rem;
-    display: flex;
-    flex-direction: row;
     gap: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
+#info{
+    align-items: center;
+    justify-content: center;
+}
 
 /* Efeito de flip para a foto do perfil */
 

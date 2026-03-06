@@ -113,3 +113,14 @@ body{
 }
 /*---------------------------------------------------------------------------------------------*/
 
+button{
+    background-color: var(--roxo);
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+    border-radius: 3rem;
+    padding: 0.5rem;
+    width: min-content;
+    height: min-content;
+}
+
