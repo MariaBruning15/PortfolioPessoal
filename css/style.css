@@ -1,3 +1,6 @@
+/*Geral*/
+/*---------------------------------------------------------------------------------------------*/
+
 *{
     margin:0;
     padding:0;
@@ -11,13 +14,15 @@
 
 body{
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2rem;
 }
-
-
 
 /*Header*/
 
-#header{
+.header{
    background-color: var(--branco);
    border-radius: 3rem;
    display: flex;
@@ -27,7 +32,8 @@ body{
    vertical-align: center;
    padding: 1.5rem;
    gap: 1rem;
-   margin: 2.5rem;
+   margin: auto;
+   width: 80%;
 }
 
 #icon{
@@ -35,16 +41,14 @@ body{
     height: 2.5rem;
 }
 
-#header p{
+.header p{
     color: var(--preto);
     font-size: 2rem;
     font-weight: medium;
     margin-left: 0;
 }
 
-/*---------------------------------------------------------------------------------------------*/
-
-/*Perfil*/
+/*Janela*/
 
 .janela{
     border-radius: 1rem;
@@ -54,7 +58,63 @@ body{
     margin-top: 1.5rem;
     margin: 2.5rem;
     flex-wrap: wrap;
+    height: max-content;
+    width: 80%;
+    margin: auto;
 }
+
+.secao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+    height: max-content;
+    align-items: center;  
+    color: var(--branco);   
+}
+
+.divisao{
+    background-image: url("/assets/img/Design\ sem\ nome.svg");
+    background-repeat: repeat;
+    background-size: 12rem;
+    height: 1.5rem;
+    width: 100%;
+    border: 1.5px solid var(--branco);
+    margin: 1rem 0;
+}
+
+
+/*Links*/
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-size: 25rem;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.botao{
+    width: 1.5rem;
+    height: 1.5rem;
+    visibility: hidden;
+}
+
+.link:hover .botao{
+    visibility: visible;
+    pointer-events: auto;  
+}
+/*---------------------------------------------------------------------------------------------*/
+
+/*Perfil*/
+/*---------------------------------------------------------------------------------------------*/
 
 #perfil{
     color: var(--branco);
@@ -70,23 +130,8 @@ body{
     align-items: center;
 }
 
-.banner{
-    background-image: url("/assets/img/Design\ sem\ nome.svg");
-    background-repeat: repeat;
-    background-size: 12rem;
-    height: 1.5rem;
-    width: 100%;
-    border: 1.5px solid var(--branco);
-}
 
-#info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0.5rem;
-    height: max-content;
-    align-items: center;     
-}
+
 
 /* Efeito de flip para a foto do perfil */
 
@@ -128,6 +173,7 @@ body{
 /*---------------------------------------------------------------------------------------------*/
 
 /*Contato*/
+/*---------------------------------------------------------------------------------------------*/
 
 a{
     text-decoration: none;
@@ -138,31 +184,7 @@ a{
 }
  
 
-#redes-sociais{
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    background-size: 25rem;
-}
 
-.link{
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    align-items: center;
-}
-
-.botao{
-    width: 1.5rem;
-    height: 1.5rem;
-    visibility: hidden;
-}
-
-.link:hover .botao{
-    visibility: visible;
-    pointer-events: auto;  
-}
 
 #contato{
     display: flex;
@@ -170,3 +192,5 @@ a{
     gap: 1rem;
     align-items: center;
 }
+
+/*---------------------------------------------------------------------------------------------*/
