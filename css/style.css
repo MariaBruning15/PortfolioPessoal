@@ -7,7 +7,7 @@
 }
 
 :root{
-    --roxo: #724c74;
+    --roxo: #895d8d;
     --branco: #dcdcdc;
     --preto: #2a2a2a;
     font-family: Zain, sans-serif;
@@ -21,7 +21,7 @@
     font-style: normal;
 }
 
-body{
+main{
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,8 @@ body{
    padding: 1.5rem;
    gap: 1rem;
    margin: auto;
-   width: 80%;
+   width: 90%;
+   margin-top: 2rem;
 }
 
 #icon{
@@ -64,12 +65,15 @@ body{
     border: var(--branco) 5px solid;
     background-image: url(/assets/img/estrelas.jpg);
     background-repeat: repeat;
+    background-size: 25rem;
     margin-top: 1.5rem;
     flex-wrap: wrap;
     height: max-content;
     width: 80%;
     margin: auto;
+    margin-top: 5rem;
 }
+
 
 .secao{
     display: flex;
@@ -151,6 +155,24 @@ button{
     font-size: 1rem;
 }
 
+button:hover{
+    background-color: var(--branco);
+    color: var(--roxo);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: black;
+    border-radius: 0 0 1rem 1rem;
+    width: 100%;
+    height: 5rem;
+    z-index: 1000;
+    text-align: center;
+    justify-content: center;
+}
+
 h1{
     font-size: 4rem;
     font-weight: bold;
@@ -169,7 +191,7 @@ p{
 a{
     text-decoration: none;
     color: var(--roxo);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: medium;
     text-decoration: none;
 }
