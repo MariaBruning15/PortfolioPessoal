@@ -79,6 +79,7 @@ body{
     height: max-content;
     align-items: center;  
     color: var(--branco);   
+    text-align: center;
 }
 
 .divisao{
@@ -97,7 +98,6 @@ body{
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
-    padding: 1.5rem;
 }
 
 .link{
@@ -119,14 +119,69 @@ body{
 }
 /*---------------------------------------------------------------------------------------------*/
 
+/*Títulos*/
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    vertical-align: center;
+    justify-content: center;
+}
+
+.titulo img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.5rem 0;
+}
+
 button{
+    text-decoration: none;
+    font-family: 'Zain', cursive;
     background-color: var(--roxo);
     color: var(--branco);
     border: none;
     cursor: pointer;
     border-radius: 3rem;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
     width: min-content;
     height: min-content;
+    font-weight: medium;
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+    }
+
+h2{
+    font-size: 3.2rem;
+    font-weight: medium;
+    }
+
+p{
+    font-size: 2rem;
+    font-weight: light;
+}
+
+a{
+    text-decoration: none;
+    color: var(--roxo);
+    font-size: 1.5rem;
+    font-weight: medium;
+    text-decoration: none;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-weight: medium;
+    color: var(--roxo);
+}
+
+li{
+    list-style-type: none;
+    font-size: 1.5rem;
 }
 

@@ -12,6 +12,9 @@
 #info{
     align-items: center;
     justify-content: center;
+    height: fit-content;
+    align-self: center;
+    text-align: center;
 }
 
 /* Efeito de flip para a foto do perfil */
@@ -56,22 +59,17 @@
 /*Contato*/
 /*---------------------------------------------------------------------------------------------*/
 
-a{
-    text-decoration: none;
-    color: var(--roxo);
-    font-size: 1.5rem;
-    font-weight: medium;
-    text-decoration: none;
-}
- 
-
-
-
 #contato{
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+    justify-content: center;
+}
+
+#formulario{
+    justify-content: center;
+    text-align: center;
 }
 
 /*---------------------------------------------------------------------------------------------*/
