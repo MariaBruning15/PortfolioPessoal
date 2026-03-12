@@ -1,0 +1,21 @@
+@import url(../css/style.css);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: black;
+    border-radius: 0 0 1rem 1rem;
+    width: 100%;
+    height: 5rem;
+    z-index: 1000;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    border: 0;
+}
