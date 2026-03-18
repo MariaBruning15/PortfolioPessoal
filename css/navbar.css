@@ -9,7 +9,7 @@ nav{
     display: flex;
     flex-direction: row;
     position: fixed;
-    background-color: black;
+    background-color: var(--preto2);
     border-radius: 0 0 1rem 1rem;
     width: 100%;
     height: 5rem;

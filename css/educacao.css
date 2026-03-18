@@ -1,24 +1,35 @@
 @import url(../css/style.css);
 
-.bloco{
-    border-radius: 1rem;
+#header2{
     background-color: var(--branco);
-    flex-wrap: wrap;
-    height: max-content;
-    width: 25%;
-    margin: auto;
-    color: var(--preto);
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
+   border-radius: 3rem;
+   display: flex;
+   flex-direction: row;
+   size: min-content;
+   justify-content: left;
+   vertical-align: center;
+   padding: 1rem 2rem;
+   margin: auto;
+   width: max-content;
+   margin: 2rem auto;
+   gap: 0.5rem;
 }
 
-.bloco h1{
-    font-size: 2rem;
+#icon2{
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.5rem;
 }
 
-#cursos{
-    display: flex;
-    flex-direction: row;
+
+.cursos{
     gap: 1rem;
+}
+
+
+#titulo-header2{
+    color: var(--preto1);
+    font-size: 2rem;
+    font-weight: medium;
+    margin-left: 0;
 }
