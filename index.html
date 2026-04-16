@@ -17,7 +17,12 @@
     <div class="janela">
         <header class="header">
         <img src="../assets/icon/lua-crescente.svg" alt="icon" id="icon">
-        <p>Perfil</p>
+        <p data-i18n="titulo_perfil">Perfil</p>
+        <div class="idioma-selector">
+            
+            <button onclick="mudarIdioma('pt-br')">PT</button>
+            <button onclick="mudarIdioma('en')">EN</button>
+        </div>
 
     </header>
         <section id="perfil" class="secao"> <!--Página Inicial -->
@@ -36,18 +41,18 @@
             <div id="info">
                 <div class="titulo">
                     <img src="/assets/icon/estrela.svg" alt="">
-                    <h1>Maria Eduarda F. Bruning</h1>
+                    <h1 data-i18n="nome_perfil">Maria Eduarda F. Bruning</h1>
                 </div>
-                <p>20 anos</p>
-                <h2>Sobre mim:</h2>
-                <p>Estudante de informática</p>
-                <p>Maior afinidade com front-end</p>
-                <h3>Interesses:</h3>
+                <p data-i18n="idade_perfil">20 anos</p>
+                <h2 data-i18n="sobre_mim">Sobre mim:</h2>
+                <p data-i18n="sobre_mim_descricao">Estudante de informática</p>
+                <p data-i18n="sobre_mim_afinidade">Maior afinidade com front-end</p>
+                <h3 data-i18n="interesses">Interesses:</h3>
                 <ol>
-                    <li>Design</li>
-                    <li>Ilustração</li>
-                    <li>Leitura</li>
-                    <li>Escrita</li>
+                    <li data-i18n="interesse_1">Design</li>
+                    <li data-i18n="interesse_2">Ilustração</li>
+                    <li data-i18n="interesse_3">Leitura</li>
+                    <li data-i18n="interesse_4">Escrita</li>
                 </ol>
             </div>         
         </section>
@@ -59,28 +64,28 @@
         <section id="habilidades" class="secao"> <!--Habilidades -->
             <div class="titulo">
                 <img src="/assets/icon/estrela.svg" alt="">
-                <h1>Minhas Habilidades</h1>
+                <h1 data-i18n="habilidades_titulo">Minhas Habilidades</h1>
             </div>
-            <h3>Soft skills</h3>
+            <h3 data-i18n="soft_skills">Soft skills</h3>
             <ul>
-                <li>Comunicação</li>
-                <li>Trabalho em equipe</li>
-                <li>Resolução de problemas</li>
+                <li data-i18n="skill_comunicacao">Comunicação</li>
+                <li data-i18n="skill_equipe">Trabalho em equipe</li>
+                <li data-i18n="skill_problemas">Resolução de problemas</li>
             </ul>
-            <h3>Hard skills</h3>
+            <h3 data-i18n="hard_skills">Hard skills</h3>
             <ul>
-                <li>Lógica de programação</li>
-                <li>Linguagem de programação (Java, PHP)</li>
-                <li>Algoritmos e estrutura de dados</li>
-                <li>Banco de dados (MySQL)</li>
-                <li>Programação Orientada a Objetos (POO)</li>
-                <li>Análise e projeto de sistemas</li>
-                <li>Desenvolvimento de front-end (HTML, CSS e JavaScript)</li>
-                <li>Desenvolvimento de back-end</li>
-                <li>Desenvolvimento Web</li>
-                <li>Fundamentos de design gráfico e princípios básicos</li>
-                <li>Conhecimento de linguagem e sintaxe visual</li>
-                <li>Estratégias de design</li>
+                <li data-i18n="hard_skill_1">Lógica de programação</li>
+                <li data-i18n="hard_skill_2">Linguagem de programação (Java, PHP)</li>
+                <li data-i18n="hard_skill_3">Algoritmos e estrutura de dados</li>
+                <li data-i18n="hard_skill_4">Banco de dados (MySQL)</li>
+                <li data-i18n="hard_skill_5">Programação Orientada a Objetos (POO)</li>
+                <li data-i18n="hard_skill_6">Análise e projeto de sistemas</li>
+                <li data-i18n="hard_skill_7">Desenvolvimento de front-end (HTML, CSS e JavaScript)</li>
+                <li data-i18n="hard_skill_8">Desenvolvimento de back-end</li>
+                <li data-i18n="hard_skill_9">Desenvolvimento Web</li>
+                <li data-i18n="hard_skill_10">Fundamentos de design gráfico e princípios básicos</li>
+                <li data-i18n="hard_skill_11">Conhecimento de linguagem e sintaxe visual</li>
+                <li data-i18n="hard_skill_12">Estratégias de design</li>
             </ul>
         </section>
 
@@ -90,7 +95,7 @@
         <section id="contato" class="secao"> <!--Contatos-->
             <div class="titulo">
                 <img src="/assets/icon/estrela.svg" alt="">
-                <h1>Redes Sociais</h1>
+                <h1 data-i18n="redes_sociais_titulo">Redes Sociais</h1>
             </div>
             
             <div class="links" >                
@@ -103,13 +108,13 @@
                     <a href="https://www.linkedin.com/in/maria-eduarda-bruning-a1ab282b1/" target="_blank">Linkedin</a>
                 </div>
             </div>
-            <h2>Entre em Contato</h2>
+            <h2 data-i18n="contato_titulo">Entre em Contato</h2>
             <div id="formulario">        
                 <form action="">
-                    <input type="text" placeholder="Seu nome">
-                    <input type="email" placeholder="Seu email">
-                    <textarea placeholder="Sua mensagem"></textarea>
-                    <button>Enviar</button>
+                    <input type="text" placeholder="Seu nome" data-i18n="placeholder_nome">
+                    <input type="email" placeholder="Seu email" data-i18n="placeholder_email">
+                    <textarea placeholder="Sua mensagem" data-i18n="placeholder_mensagem"></textarea>
+                    <button data-i18n="btn_enviar">Enviar</button>
                 </form>
             </div>
         </section>  
@@ -122,5 +127,5 @@
 
 </body>
 
-<script src="../js/api.js"></script>
+<script src="../js/perfil.js"></script> <script src="../js/i18n.js"></script>   <script src="../js/api.js"></script>
 </html>

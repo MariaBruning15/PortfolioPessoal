@@ -19,17 +19,21 @@
     <div class="janela">
         <header class="header">
             <img src="../assets/icon/lua-crescente.svg" alt="icon" id="icon">
-            <p>Educação</p>
+            <p data-i18n="educacao_titulo">Educação</p>
+            <div class="idioma-selector">         
+            <button onclick="mudarIdioma('pt-br')">PT</button>
+            <button onclick="mudarIdioma('en')">EN</button>
+        </div>
         </header>
         <section id="cursando" class="secao">
             <div class="titulo">
                 <img src="/assets/icon/estrela.svg" alt="">
-                <h1>Cursando</h1>
+                <h1 data-i18n="cursando_titulo">Cursando</h1>
             </div>
-            <h2>Engenharia de Software</h2>
-            <h3>Instituto Federal do Paraná, Campus Paranavaí</h3>
-            <p>3⁰ ano</p>
-            <p><strong>Turno:</strong> Noturno</p>
+            <h2 data-i18n="engenharia_software">Engenharia de Software</h2>
+            <h3 data-i18n="instituto_federal">Instituto Federal do Paraná, Campus Paranavaí</h3>
+            <p data-i18n="ano_titulo">3⁰ ano</p>
+            <p data-i18n="turno_descricao1">Turno: Noturno</p>
         </section>
 
         <div class="divisao"></div>
@@ -37,15 +41,15 @@
         <section id="formacao" class="secao">
             <div class="titulo">
                 <img src="/assets/icon/estrela.svg" alt="">
-                <h1>Formação</h1>
+                <h1 data-i18n="formacao_titulo">Formação</h1>
             </div>
-            <h2>Técnico em Informática</h2>
-            <h3>Instituto Federal do Paraná, Campus Paranavaí</h3>
+            <h2 data-i18n="tecnico_informatica">Técnico em Informática</h2>
+            <h3 data-i18n="instituto_federal">Instituto Federal do Paraná, Campus Paranavaí</h3>
             <p>FEVEREIRO DE 2020 - DEZEMBRO DE 2023</p>
             <ul>
-                <li><strong>Turno:</strong> Matutino</li>
-                <li><strong>Carga horária total:</strong> 3532 horas</li>
-                <li><strong>Eixo Tecnológico:</strong> Informação e Comunicação</li>
+                <li data-i18n="turno_descricao2"><strong data-i18n="turno_titulo2">Turno:</strong> Matutino</li>
+                <li data-i18n="carga_horaria_total_descricao">Carga horária total: 3532 horas</li>
+                <li data-i18n="eixo_tecnologico_descricao">Eixo Tecnológico: Informação e Comunicação</li>
             </ul>
         </section>
 
@@ -54,22 +58,22 @@
         <section id="cursos-complementares" class="secao">
             <div class="titulo">
                 <img src="../assets/icon/estrela.svg" alt="">
-                <h1>Cursos Complementares</h1>
+                <h1 data-i18n="cursos_complementares_titulo">Cursos Complementares</h1>
             </div>
             <div class="cursos">
                 <div id="header2">
                     <img src="../assets/icon/lua-crescente.svg" alt="icon" id="icon2">
-                    <p id="titulo-header2">Fundamentos do Design Gráfico</p>
+                    <p id="titulo-header2" data-i18n="fundamentos_design_grafico">Fundamentos do Design Gráfico</p>
                 </div>
-                    <h3>Função Bradesco - Escola Virtual</h3>
-                    <p><strong>Carga horária total:</strong> 6 horas</p>
+                    <h3 data-i18n="fundacao_bradesco">Função Bradesco - Escola Virtual</h3>
+                    <p data-i18n="carga_horaria_total_design1">Carga horária total:6 horas</p>
 
                     <div id="header2">
                     <img src="../assets/icon/lua-crescente.svg" alt="icon" id="icon2">
-                    <p id="titulo-header2">Design Gráfico - COMPLETÍSSIMO</p>
+                    <p id="titulo-header2" data-i18n="design_grafico_completissimo">Design Gráfico - COMPLETÍSSIMO</p>
                 </div>
                 <h3>Udemy</h3>
-                <p><strong>Carga horária total:</strong> 10 horas</p>
+                <p data-i18n="carga_horaria_total_design2">Carga horária total: 10 horas</p>
             </div>
         </section>
         
@@ -77,4 +81,5 @@
     </main>
     
 </body>
+<script src="../js/educacao.js"></script> <script src="../js/i18n.js"></script>
 </html>

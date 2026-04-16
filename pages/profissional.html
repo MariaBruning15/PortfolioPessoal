@@ -19,21 +19,25 @@
     <div class="janela">
         <header class="header">
         <img src="../assets/icon/lua-crescente.svg" alt="icon" id="icon">
-        <p>Experiência Profissional</p>
+        <p data-i18n="experiencia_profissional_titulo">Experiência Profissional</p>
+        <div class="idioma-selector">         
+            <button onclick="mudarIdioma('pt-br')">PT</button>
+            <button onclick="mudarIdioma('en')">EN</button>
+        </div>
     </header>
 
     <section id="olinda" class="secao">
         <div class="titulo">
-            <img src="/assets/icon/estrela.svg" alt="">
-            <h1>Estágio</h1>
+            <img src="/assets/icon/estrela.svg" alt="estrela">
+            <h1 data-i18n="estagio">Estágio</h1>
         </div>
-        <h3>AMARILDO CEZAR GONCALVEZ DA CRUZ - OLLINTEK</h3>
-        <p>SETEMBRO DE 2024 - ABRIL DE 2025</p>
+        <h3 data-i18n="amarildo_cruz">AMARILDO CEZAR GONCALVEZ DA CRUZ - OLLINTEK</h3>
+        <p data-i18n="periodo_olinda">SETEMBRO DE 2024 - ABRIL DE 2025</p>
         <ul>
-            <li>Atendimento ao público</li>
-            <li>Criação e manutenção de anúncios em marketplace</li>
-            <li>Criação e gerenciamento de planilhas</li>
-            <li>Manutenção de estoque</li>
+            <li data-i18n="atendimento_publico">Atendimento ao público</li>
+            <li data-i18n="criacao_anuncios">Criação e manutenção de anúncios em marketplace</li>
+            <li data-i18n="criacao_planilhas">Criação e gerenciamento de planilhas</li>
+            <li data-i18n="manutencao_estoque">Manutenção de estoque</li>
         </ul>
     </section>
 
@@ -41,14 +45,14 @@
 
     <section id="pifarma" class="secao">
         <div class="titulo">
-            <img src="/assets/icon/estrela.svg" alt="">
-            <h1>Estágio</h1>
+            <img src="/assets/icon/estrela.svg" alt="estrela">
+            <h1 data-i18n="estagio">Estágio</h1>
         </div>
-        <h3>RAKOSKI & CIA LTDA. - EPP (PIFARMA)</h3>
-        <p>MAIO DE 2025 - DEZEMBRO DE 2025</p>
+        <h3 data-i18n="rakoski_cia">RAKOSKI & CIA LTDA. - EPP (PIFARMA)</h3>
+        <p data-i18n="periodo_pifarma">MAIO DE 2025 - DEZEMBRO DE 2025</p>
             <ul>
-                <li>Desenvolvimento de rótulos para cosméticos</li>
-                <li>Manutenção de sistema interno</li>
+                <li data-i18n="desenvolvimento_rotulos">Desenvolvimento de rótulos para cosméticos</li>
+                <li data-i18n="manutencao_sistema">Manutenção de sistema interno</li>
             </ul>
     </section>
         
@@ -56,4 +60,5 @@
     </main>
     
 </body>
+<script src="../js/profissional.js"></script> <script src="../js/i18n.js"></script>
 </html>
