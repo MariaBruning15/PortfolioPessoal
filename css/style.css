@@ -15,6 +15,7 @@
 }
 
 
+
 @font-face {
     font-family: 'Zain';
     src: url('/assets/fonts/Zain-Light.ttf') format('truetype');
@@ -85,6 +86,7 @@ main{
     align-items: center;  
     color: var(--branco);   
     text-align: center;
+    min-height: fit-content;
 }
 
 .divisao{
