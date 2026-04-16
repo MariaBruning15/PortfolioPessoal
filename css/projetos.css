@@ -16,3 +16,46 @@
 .bloco h1{
     font-size: 2rem;
 }
+
+#bookverso{
+    width: 60%;
+    height: min-content;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+}
+
+#setif{
+    width: 60%;
+    height: min-content;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+}
+
+
+#devlinks{
+    width: 60%;
+    height: min-content;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+}
+
+#ignite{
+    width: 60%;
+    height: min-content;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+}
+
+#jogo-memoria{
+    width: 60%;
+    height: min-content;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+}
+
+#recomendacao{
+    width: 60%;
+    height: min-content;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+}
