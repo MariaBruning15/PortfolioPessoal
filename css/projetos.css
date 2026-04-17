@@ -1,17 +1,5 @@
 @import url(../css/style.css);
 
-.bloco{
-    border-radius: 1rem;
-    background-color: var(--branco);
-    flex-wrap: wrap;
-    height: max-content;
-    width: 25%;
-    margin: auto;
-    color: var(--preto);
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-}
 
 .bloco h1{
     font-size: 2rem;

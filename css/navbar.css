@@ -19,4 +19,14 @@ nav{
     justify-content: center;
     margin: 0;
     border: 0;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    nav{
+        display: flex;
+        height: auto;
+        padding: 1rem;
+        flex-direction: column;
+    }
 }

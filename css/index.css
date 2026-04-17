@@ -115,6 +115,21 @@ form{
     align-items: center;
 }
 
+form button{
+    background-color: var(--roxo);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 3rem;
+}
+
+form button:hover{
+    background-color: var(--branco);
+    color: var(--roxo);
+}
+
 form input, form textarea{
     font-family: Zain, sans-serif;
     width: 20rem;

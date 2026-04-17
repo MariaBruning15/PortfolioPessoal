@@ -1,4 +1,4 @@
-const obterDados = (nomeVariavel, idioma) => {
+const obterDados = (nomeVariavel, idioma) => { //verificar se a variável existe e se tem o idioma
     try {
         if (typeof window[nomeVariavel] !== 'undefined' && window[nomeVariavel][idioma]) {
             return window[nomeVariavel][idioma];
@@ -10,7 +10,7 @@ const obterDados = (nomeVariavel, idioma) => {
 };
 
 function mudarIdioma(idioma) {
-    localStorage.setItem('linguagemPref', idioma);
+    localStorage.setItem('linguagemPref', idioma); //salva a preferência do usuário no localStorage
 
     const dicionarioAtual = {
         ...obterDados('traducoesPerfil', idioma),
@@ -22,7 +22,7 @@ function mudarIdioma(idioma) {
         
     };
 
-    const elementos = document.querySelectorAll('[data-i18n]');
+    const elementos = document.querySelectorAll('[data-i18n]'); //seleciona todos os elementos que tem o data-i18n
     elementos.forEach(el => {
         const chave = el.getAttribute('data-i18n');
         const traducao = dicionarioAtual[chave];
@@ -37,16 +37,16 @@ function mudarIdioma(idioma) {
     });
 
 
-    const iframe = document.querySelector('iframe');
+    const iframe = document.querySelector('iframe'); //envia o comando para o iframe (se existir) para ele também trocar o idioma
     if (iframe && iframe.contentWindow) {
-        iframe.contentWindow.postMessage({
+        iframe.contentWindow.postMessage({ //envia uma mensagem para o iframe
             tipo: 'TROCAR_IDIOMA',
             idioma: idioma
         }, '*');
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => { //ao carregar a página verifica se tem uma preferência salva
     const salva = localStorage.getItem('linguagemPref') || 'pt-br';
     mudarIdioma(salva);
 });

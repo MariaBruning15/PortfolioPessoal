@@ -47,6 +47,7 @@ main{
    margin: auto;
    width: 85%;
    margin-top: 3rem;
+   flex-wrap: wrap;
 }
 
 .header .idioma-selector{
@@ -97,6 +98,7 @@ main{
     width: 80%;
     margin: auto;
     margin-top: 3rem;
+    overflow-x:scroll;
 }
 
 
@@ -110,6 +112,8 @@ main{
     color: var(--branco);   
     text-align: center;
     min-height: fit-content;
+    flex-wrap: wrap;
+    overflow-x:scroll;
 }
 
 .divisao{
@@ -234,4 +238,6 @@ iframe{
     position: fixed;
     z-index: 1000;
 }
+
+
 
